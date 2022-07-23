@@ -67,8 +67,10 @@ namespace CSDLPT_TRACNGHIEM
             DialogResult dr = MessageBox.Show("Bạn có chắc muốn thoát chương trình dl", "", MessageBoxButtons.YesNo);
             if (dr == DialogResult.Yes)
             {
-                this.Close();
 
+                Program.frmMain.Visible = true;
+                
+                this.Close();
             }
             // Kiểm tra có mẫu tin nào đang ghi dở hk, hỏi người dùng có muốn ghi?
         }
@@ -89,15 +91,7 @@ namespace CSDLPT_TRACNGHIEM
                 this.Close();
                 return;
             }
-            else
-            {
-                DialogResult dr = MessageBox.Show("Bạn có chắc muốn thoát chương trình", "", MessageBoxButtons.YesNo);
-                if (dr == DialogResult.Yes)
-                {
-                    Application.ExitThread();
-                }
-                else e.Cancel = true;
-            }
+            
         }
 
     }

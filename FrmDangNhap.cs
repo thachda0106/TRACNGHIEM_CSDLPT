@@ -11,7 +11,7 @@ using DevExpress.XtraEditors;
 using System.Data.SqlClient;
 using CSDLPT_TRACNGHIEM;
 
-namespace QUANLYNGANHANG
+namespace CSDLPT_TRACNGHIEM
 {
     public partial class FrmDangNhap : DevExpress.XtraEditors.XtraForm
     {
@@ -107,7 +107,7 @@ namespace QUANLYNGANHANG
                 frm.HOTEN.Text = Program.hoTenNV;
                 frm.NHOM.Text = Program.groupNV;
                 frm.MASO.Text = Program.MaNV;
-                this.MdiParent.Visible = false;
+                Program.frmMain.Visible = false;
                 frm.Visible = true;
             }
             else

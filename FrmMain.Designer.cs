@@ -1,5 +1,5 @@
 ﻿
-namespace QUANLYNGANHANG
+namespace CSDLPT_TRACNGHIEM
 {
     partial class FrmMain
     {

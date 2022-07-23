@@ -6,7 +6,7 @@ using DevExpress.Skins;
 using DevExpress.UserSkins;
 using System.Data.SqlClient;
 using System.Data;
-namespace QUANLYNGANHANG
+namespace CSDLPT_TRACNGHIEM
 {
     static class Program
     {
@@ -30,7 +30,6 @@ namespace QUANLYNGANHANG
         public static String database = "TRACNGHIEM";
         public static String remoteLogin = "HTKN";
         public static String remotePassword = "1447";
-
 
         public static BindingSource bds_LisSubscriber = new BindingSource(); // giữ danh sách phân mảnh khi đăng nhập được vào hệ thống
         public static FrmMain frmMain; // form chính để tương tác với các form khác

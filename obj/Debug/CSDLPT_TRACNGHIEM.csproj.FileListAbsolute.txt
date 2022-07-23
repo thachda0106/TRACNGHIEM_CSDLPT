@@ -44,8 +44,6 @@ C:\Users\thach\source\repos\CSDLPT_TRACNGHIEM\CSDLPT_TRACNGHIEM\bin\Debug\de\Dev
 C:\Users\thach\source\repos\CSDLPT_TRACNGHIEM\CSDLPT_TRACNGHIEM\bin\Debug\es\DevExpress.Pdf.v19.2.Core.resources.dll
 C:\Users\thach\source\repos\CSDLPT_TRACNGHIEM\CSDLPT_TRACNGHIEM\bin\Debug\ja\DevExpress.Pdf.v19.2.Core.resources.dll
 C:\Users\thach\source\repos\CSDLPT_TRACNGHIEM\CSDLPT_TRACNGHIEM\bin\Debug\ru\DevExpress.Pdf.v19.2.Core.resources.dll
-C:\Users\thach\source\repos\CSDLPT_TRACNGHIEM\CSDLPT_TRACNGHIEM\obj\Debug\QUANLYNGANHANG.FrmDangNhap.resources
-C:\Users\thach\source\repos\CSDLPT_TRACNGHIEM\CSDLPT_TRACNGHIEM\obj\Debug\QUANLYNGANHANG.FrmMain.resources
 C:\Users\thach\source\repos\CSDLPT_TRACNGHIEM\CSDLPT_TRACNGHIEM\obj\Debug\CSDLPT_TRACNGHIEM.frmSinhVienMain.resources
 C:\Users\thach\source\repos\CSDLPT_TRACNGHIEM\CSDLPT_TRACNGHIEM\obj\Debug\CSDLPT_TRACNGHIEM.Properties.Resources.resources
 C:\Users\thach\source\repos\CSDLPT_TRACNGHIEM\CSDLPT_TRACNGHIEM\obj\Debug\CSDLPT_TRACNGHIEM.csproj.GenerateResource.cache
@@ -93,3 +91,5 @@ C:\Users\thach\source\repos\CSDLPT_TRACNGHIEM\CSDLPT_TRACNGHIEM\bin\Debug\ja\Dev
 C:\Users\thach\source\repos\CSDLPT_TRACNGHIEM\CSDLPT_TRACNGHIEM\bin\Debug\ru\DevExpress.Office.v19.2.Core.resources.dll
 C:\Users\thach\source\repos\CSDLPT_TRACNGHIEM\CSDLPT_TRACNGHIEM\obj\Debug\CSDLPT_TRACNGHIEM.csproj.AssemblyReference.cache
 C:\Users\thach\source\repos\CSDLPT_TRACNGHIEM\CSDLPT_TRACNGHIEM\obj\Debug\CSDLPT_TRACNGHIEM.frmGiangVienDangKy.resources
+C:\Users\thach\source\repos\CSDLPT_TRACNGHIEM\CSDLPT_TRACNGHIEM\obj\Debug\CSDLPT_TRACNGHIEM.FrmMain.resources
+C:\Users\thach\source\repos\CSDLPT_TRACNGHIEM\CSDLPT_TRACNGHIEM\obj\Debug\CSDLPT_TRACNGHIEM.FrmDangNhap.resources

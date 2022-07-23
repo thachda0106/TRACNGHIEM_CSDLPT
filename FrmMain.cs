@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace QUANLYNGANHANG
+namespace CSDLPT_TRACNGHIEM
 {
 
     public partial class FrmMain : DevExpress.XtraBars.Ribbon.RibbonForm
