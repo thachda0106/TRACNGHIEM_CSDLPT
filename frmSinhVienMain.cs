@@ -22,7 +22,7 @@ namespace CSDLPT_TRACNGHIEM
 
         private void btnThi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-          /*  Form form = this.CheckExists(typeof(frmThi));
+            Form form = this.CheckExists(typeof(frmThi));
             if (form == null)
             {
 
@@ -32,34 +32,28 @@ namespace CSDLPT_TRACNGHIEM
                 f.Show();
             }
             else form.Activate();
-            checkThi = true;*/
+            /*checkThi = true;*/
         }
 
         private void btnXemKQ_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-           /* Form form = this.CheckExists(typeof(frmKQThi));
+            Form form = this.CheckExists(typeof(frmXemKQThi));
             if (form == null)
             {
 
                 IsMdiContainer = true;
-                frmKQThi f = new frmKQThi();
+                frmXemKQThi f = new frmXemKQThi();
                 f.MdiParent = this;
-
                 f.Show();
             }
-            else form.Activate();*/
+            else form.Activate();
         }
 
         private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-           /* checkDangXuat = true;
-            Program.mlogin = "";
-            Program.password = "";
-            this.Hide();
-            Program.frmDangNhap = new frmDangNhap();
-            Program.frmDangNhap.Activate();
-            Program.frmDangNhap.ShowDialog();
-            this.Close();*/
+                Program.frmMain.Visible = true;
+                this.Close();
+
         }
 
         private void btnThoat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -72,6 +66,7 @@ namespace CSDLPT_TRACNGHIEM
                 
                 this.Close();
             }
+
             // Kiểm tra có mẫu tin nào đang ghi dở hk, hỏi người dùng có muốn ghi?
         }
 
@@ -94,5 +89,9 @@ namespace CSDLPT_TRACNGHIEM
             
         }
 
+        private void frmSinhVienMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

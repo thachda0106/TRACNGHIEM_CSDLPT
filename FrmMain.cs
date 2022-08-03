@@ -34,29 +34,19 @@ namespace CSDLPT_TRACNGHIEM
             
                 this.ribbonBaoCao.Visible = true;
                 this.ribbonCauHinh.Visible = true;
-                this.btnTaoTaiKhoan.Enabled = true;
                 this.ribbonDanhMuc.Visible = true;
                 this.btnDangXuat.Enabled = true;
                 this.btnDangNhap.Enabled = false;
-                /* if (Program.groupNV.Equals("CHINHANH")) // login thuộc chi nhánh toàn quyền bật hết các chức nắng (buttons)
-                 {
-                     this.btnGuiRutTien.Enabled = true;
-                     this.btnChuyenTien.Enabled = true;
-                     this.btnKhachHang.Enabled = true;
-                     this.btnNhanVien.Enabled = true;
-                     this.btnMoTaiKhoan.Enabled = true;
-                 }*/
-                /* if (Program.groupNV.Equals("NGANHANG")) // login thuộc chi nhánh toàn quyền bật hết các chức nắng (buttons)
-                 {
-                     this.btnKhachHang.Enabled = true;
-                     // hide các button cập nhật dữ liệu chỉ cho xem
-                     //...
-                     this.btnNhanVien.Enabled = true;
-                     // hide các button cập nhật dữ liệu chỉ cho xem
-                     this.btnMoTaiKhoan.Enabled = true;
-                     this.ribbonDanhMuc.Visible = false;
+                this.btnThoat.Enabled = true;
+                this.btnTaoTaiKhoan.Enabled = true;
+            if (Program.groupNV.Equals("GIANGVIEN")) // login thuộc chi nhánh toàn quyền bật hết các chức nắng (buttons)
+            {
+                
+            }
+            if (Program.groupNV.Equals("TRUONG")) // login thuộc chi nhánh toàn quyền bật hết các chức nắng (buttons)
+            {
 
-                 }*/
+            }
 
 
 
@@ -101,8 +91,128 @@ namespace CSDLPT_TRACNGHIEM
             lbGroup.Text = "";
         }
 
-      
+        private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Bạn có chắc muốn thoát chương trình!", "", MessageBoxButtons.YesNo);
+            if (dr == DialogResult.Yes)
+            {
+                this.Close();
+            }
 
-     
+            // Kiểm tra có mẫu tin nào đang ghi dở hk, hỏi người dùng có muốn ghi?
+        }
+
+        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form form = this.CheckExists(typeof(frmBoDe));
+            if (form == null)
+            {
+
+                IsMdiContainer = true;
+                frmBoDe f = new frmBoDe();
+                f.MdiParent = this;
+                f.Show();
+            }
+            else form.Activate();
+            /*checkThi = true;*/
+        }
+
+        private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form form = this.CheckExists(typeof(frmThi));
+            if (form == null)
+            {
+
+                IsMdiContainer = true;
+                frmThi f = new frmThi();
+                f.MdiParent = this;
+                f.Show();
+            }
+            else form.Activate();
+            /*checkThi = true;*/
+        }
+
+        private void barButtonItem10_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form form = this.CheckExists(typeof(frm_InBangDiemMonHoc));
+            if (form == null)
+            {
+
+                IsMdiContainer = true;
+                frm_InBangDiemMonHoc f = new frm_InBangDiemMonHoc();
+                f.MdiParent = this;
+                f.Show();
+            }
+            else form.Activate();
+            /*checkThi = true;*/
+        }
+
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(FromKhoa));
+            if (frm != null)
+            {
+                frm.Visible = true;
+                frm.Activate();
+            }
+            else
+            {
+                FromKhoa f = new FromKhoa();
+                f.MdiParent = this;
+                f.Visible = true;
+
+            }
+        }
+
+        private void btn_GVDK_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(frmGiangVienDangKy));
+            if (frm != null)
+            {
+                frm.Visible = true;
+                frm.Activate();
+            }
+            else
+            {
+                frmGiangVienDangKy f = new frmGiangVienDangKy();
+                f.MdiParent = this;
+                f.Visible = true;
+
+            }
+        }
+
+        private void btn_DSDK_thi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(frm_inDanhSachDangKyThi));
+            if (frm != null)
+            {
+                frm.Visible = true;
+                frm.Activate();
+            }
+            else
+            {
+                frm_inDanhSachDangKyThi f = new frm_inDanhSachDangKyThi();
+                f.MdiParent = this;
+                f.Visible = true;
+
+            }
+        }
+
+        private void btn_Lop_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(frm_Lop_SV));
+            if (frm != null)
+            {
+                frm.Visible = true;
+                frm.Activate();
+            }
+            else
+            {
+                frm_Lop_SV f = new frm_Lop_SV();
+                f.MdiParent = this;
+                f.Visible = true;
+
+            }
+        }
     }
 }

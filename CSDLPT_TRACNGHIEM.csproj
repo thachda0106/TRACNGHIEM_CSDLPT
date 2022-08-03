@@ -33,16 +33,32 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v19.2" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v19.2" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v19.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v19.2" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v19.2" />
     <Reference Include="DevExpress.Sparkline.v19.2.Core" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v19.2" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -54,6 +70,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CauHoi.cs" />
+    <Compile Include="frmBoDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBoDe.Designer.cs">
+      <DependentUpon>frmBoDe.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,8 +101,62 @@
     <Compile Include="frmSinhVienMain.Designer.cs">
       <DependentUpon>frmSinhVienMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThi.Designer.cs">
+      <DependentUpon>frmThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXemKQThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXemKQThi.Designer.cs">
+      <DependentUpon>frmXemKQThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_InBangDiemMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_InBangDiemMonHoc.Designer.cs">
+      <DependentUpon>frm_InBangDiemMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_inDanhSachDangKyThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_inDanhSachDangKyThi.Designer.cs">
+      <DependentUpon>frm_inDanhSachDangKyThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Lop_SV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Lop_SV.Designer.cs">
+      <DependentUpon>frm_Lop_SV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FromKhoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromKhoa.Designer.cs">
+      <DependentUpon>FromKhoa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rpt_inbaithi_XtraReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_inbaithi_XtraReport.Designer.cs">
+      <DependentUpon>rpt_inbaithi_XtraReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rp_InDSDKTHi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rp_InDSDKTHi.Designer.cs">
+      <DependentUpon>rp_InDSDKTHi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="testst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testst.Designer.cs">
+      <DependentUpon>testst.cs</DependentUpon>
+    </Compile>
     <Compile Include="TRACNGHIEMDataSet.cs">
       <DependentUpon>TRACNGHIEMDataSet.xsd</DependentUpon>
     </Compile>
@@ -88,6 +165,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TRACNGHIEMDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TRACNGHIEMDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TRACNGHIEMDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="xrpt_inBangDiemMonHOc.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrpt_inBangDiemMonHOc.Designer.cs">
+      <DependentUpon>xrpt_inBangDiemMonHOc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmBoDe.resx">
+      <DependentUpon>frmBoDe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDangNhap.resx">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +197,24 @@
     <EmbeddedResource Include="frmSinhVienMain.resx">
       <DependentUpon>frmSinhVienMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmThi.resx">
+      <DependentUpon>frmThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXemKQThi.resx">
+      <DependentUpon>frmXemKQThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_InBangDiemMonHoc.resx">
+      <DependentUpon>frm_InBangDiemMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_inDanhSachDangKyThi.resx">
+      <DependentUpon>frm_inDanhSachDangKyThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Lop_SV.resx">
+      <DependentUpon>frm_Lop_SV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromKhoa.resx">
+      <DependentUpon>FromKhoa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -110,6 +225,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="rpt_inbaithi_XtraReport.resx">
+      <DependentUpon>rpt_inbaithi_XtraReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rp_InDSDKTHi.resx">
+      <DependentUpon>rp_InDSDKTHi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testst.resx">
+      <DependentUpon>testst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrpt_inBangDiemMonHOc.resx">
+      <DependentUpon>xrpt_inBangDiemMonHOc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -130,6 +260,17 @@
     </None>
     <None Include="TRACNGHIEMDataSet.xss">
       <DependentUpon>TRACNGHIEMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TRACNGHIEMDataSet1.xsc">
+      <DependentUpon>TRACNGHIEMDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TRACNGHIEMDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TRACNGHIEMDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TRACNGHIEMDataSet1.xss">
+      <DependentUpon>TRACNGHIEMDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

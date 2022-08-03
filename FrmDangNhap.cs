@@ -89,7 +89,6 @@ namespace CSDLPT_TRACNGHIEM
             String strSql = "EXEC SP_Lay_Thong_Tin_GVSV_Tu_Login" + "'" + Program.loginDN + "'";
             Program.myReader = Program.ExecuteSqlReader(strSql);  // lấy thông tin nhân viên
             if (Program.myReader == null) return;
-
             Program.myReader.Read();  // thông tin nhân viên có 1 hàng nên đọc 1 lần
 
             Program.MaNV = Program.myReader.GetString(0);
@@ -103,12 +102,12 @@ namespace CSDLPT_TRACNGHIEM
 
             if (Program.groupNV.Equals("SINHVIEN"))
             {
-                frmSinhVienMain frm = new frmSinhVienMain();
-                frm.HOTEN.Text = Program.hoTenNV;
-                frm.NHOM.Text = Program.groupNV;
-                frm.MASO.Text = Program.MaNV;
+                Program.frmSVMain = new frmSinhVienMain();
+                Program.frmSVMain.HOTEN.Text = Program.hoTenNV;
+                Program.frmSVMain.NHOM.Text = Program.groupNV;
+                Program.frmSVMain.MASO.Text = Program.MaNV;
                 Program.frmMain.Visible = false;
-                frm.Visible = true;
+                Program.frmSVMain.Visible = true;
             }
             else
             {

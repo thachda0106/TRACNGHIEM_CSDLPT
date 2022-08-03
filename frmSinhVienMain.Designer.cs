@@ -34,12 +34,10 @@
             this.btnThi = new DevExpress.XtraBars.BarButtonItem();
             this.btnXemKQ = new DevExpress.XtraBars.BarButtonItem();
             this.btnDangXuat = new DevExpress.XtraBars.BarButtonItem();
-            this.btnThoat = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.MASO = new System.Windows.Forms.ToolStripStatusLabel();
@@ -56,11 +54,10 @@
             this.rbSinhVien.ExpandCollapseItem.Id = 0;
             this.rbSinhVien.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.rbSinhVien.ExpandCollapseItem,
+            this.rbSinhVien.SearchEditItem,
             this.btnThi,
             this.btnXemKQ,
-            this.btnDangXuat,
-            this.btnThoat,
-            this.rbSinhVien.SearchEditItem});
+            this.btnDangXuat});
             this.rbSinhVien.Location = new System.Drawing.Point(0, 0);
             this.rbSinhVien.Margin = new System.Windows.Forms.Padding(1);
             this.rbSinhVien.MaxItemId = 5;
@@ -96,22 +93,12 @@
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangXuat_ItemClick);
             // 
-            // btnThoat
-            // 
-            this.btnThoat.Caption = "Thoát";
-            this.btnThoat.Id = 4;
-            this.btnThoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.ImageOptions.Image")));
-            this.btnThoat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnThoat.ImageOptions.LargeImage")));
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThoat_ItemClick);
-            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1,
             this.ribbonPageGroup2,
-            this.ribbonPageGroup3,
-            this.ribbonPageGroup4});
+            this.ribbonPageGroup3});
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "Sinh viên";
             // 
@@ -132,12 +119,6 @@
             this.ribbonPageGroup3.ItemLinks.Add(this.btnDangXuat);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "ribbonPageGroup3";
-            // 
-            // ribbonPageGroup4
-            // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.btnThoat);
-            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "ribbonPageGroup4";
             // 
             // ribbonPage2
             // 
@@ -194,6 +175,7 @@
             this.Text = "Form sinh viên";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSVMain_FormClosing);
+            this.Load += new System.EventHandler(this.frmSinhVienMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.rbSinhVien)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
@@ -211,9 +193,7 @@
         private DevExpress.XtraBars.BarButtonItem btnThi;
         private DevExpress.XtraBars.BarButtonItem btnXemKQ;
         private DevExpress.XtraBars.BarButtonItem btnDangXuat;
-        private DevExpress.XtraBars.BarButtonItem btnThoat;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private System.Windows.Forms.StatusStrip statusStrip1;
         public System.Windows.Forms.ToolStripStatusLabel MASO;
         public System.Windows.Forms.ToolStripStatusLabel HOTEN;

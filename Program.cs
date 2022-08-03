@@ -13,7 +13,7 @@ namespace CSDLPT_TRACNGHIEM
         // khai báo các biến và hàm toàn tục
 
         public static SqlConnection conn = new SqlConnection();
-        public static String StrConn_ServerPublisher = "Data Source=LAPTOP-J7CDJNIV\\MSSQLSERVER_NNT;Initial Catalog=TRACNGHIEM;User ID=sa;Password=1447"; // chuỗi kết nối tới server chủ_ Với máy nào thì thay đổi chuổi kết nối này lại
+        public static String StrConn_ServerPublisher = "Data Source=LAPTOP-J7CDJNIV\\MSSQLSERVER_NNT;Initial Catalog=TRACNGHIEM;User ID=sa;Password=1447;"; // chuỗi kết nối tới server chủ_ Với máy nào thì thay đổi chuổi kết nối này lại
         public static String StrConn; // chuỗi kết nối tới server phân mảnh của nhân viên đăng nhập tới
 
         public static SqlDataReader myReader;    // reader chứa thông tin đăng nhập của nhân viên đăng nhập
@@ -33,7 +33,7 @@ namespace CSDLPT_TRACNGHIEM
 
         public static BindingSource bds_LisSubscriber = new BindingSource(); // giữ danh sách phân mảnh khi đăng nhập được vào hệ thống
         public static FrmMain frmMain; // form chính để tương tác với các form khác
-
+        public static frmSinhVienMain frmSVMain; // form chính để tương tác với các form khác
 
         public static int connection()
         {
@@ -41,7 +41,7 @@ namespace CSDLPT_TRACNGHIEM
 
             try
             {
-                Program.StrConn = "Data Source=" + Program.serverName + ";Initial Catalog=" + Program.database + ";User ID=" + Program.TestLogin + ";Password=" + Program.TestPassword;
+                Program.StrConn = "Data Source=" + Program.serverName + ";Initial Catalog=" + Program.database + ";User ID=" + Program.TestLogin + ";Password=" + Program.TestPassword +";MultipleActiveResultSets=true";
                 Program.conn.ConnectionString = StrConn;
                 Program.conn.Open();
                 return 1;
@@ -106,6 +106,9 @@ namespace CSDLPT_TRACNGHIEM
             Application.SetCompatibleTextRenderingDefault(false);
             Program.frmMain = new FrmMain();
             Application.Run(Program.frmMain);
+/*
+            testst s = new testst();
+            Application.Run(s);*/
 
         }
     }
